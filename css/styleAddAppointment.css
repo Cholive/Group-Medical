@@ -1,0 +1,91 @@
+body {
+  font-family: 'Archivo Black', sans-serif;
+  margin: 0;
+  background-color: white;
+}
+
+.background {
+  position: initial;
+  background-repeat: no-repeat;
+}
+
+.background:before {
+  background-image: url("../img/1.jpg");
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.button {
+  font-family: 'Archivo Black', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #a4036f;
+  border: none;
+  color: #e8e288;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #720e51
+}
+
+.item {
+  margin-top: 200px;
+  text-align: right;
+  margin-right: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#patient {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+#treatment {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+#price {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.row {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(170, 164, 164);
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-top: 40px;
+  margin-left: 30%;
+
+}
+
+.side {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(170, 164, 164);
+  flex: 10%;
+  padding: 20px;
+}

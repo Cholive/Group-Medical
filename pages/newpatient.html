@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Patient</title>
+    <script src="../script/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/stylesNewPatient.css" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+</head>
+
+<body class="background">
+
+    <div class="flex-container">
+        <form action="patient-list2.html">
+            <button class="button" href="patient-list2.html">Patients List</button>
+        </form>
+        <form action="newpatient.html">
+            <button class="button" href="newpatient.html">New Patient</button>
+        </form>
+        <button class="button">Settings</button>
+    </div>
+
+
+
+    <form action="">
+        <div class="row">
+            <div class="side">
+                <h3>Add personal information: </h3>
+                <label class="label">First Name <input class="space" type="text" placeholder="First Name"
+                        id="fName"></label> <br>
+                <label class="label">Last Name <input class="space" type="text" placeholder="Last Name"
+                        id="lName"></label> <br>
+                <label class="label">Birth Date <input class="space" type="date"> <br>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="Male" id="male"><br>
+                    <label for="female">Female</label>
+                    <input class="space" type="radio" name="gender" value="Female" id="female"><br>
+                    <label>AB Health# <input class="space" type="text" placeholder="Alberta Health #"
+                            id="health"></label><br>
+                    <br>
+                    <br>
+                    <label>Phone# <input class="space" type="text" placeholder="Phone #" id="phone"></label><br>
+                    <label>Email <input class="space" type="text" placeholder="Email" id="email"></label> <br>
+                    <label>Address <input class="space" type="text" placeholder="Address" id="address"></label> <br>
+                    <label>City <input class="space" type="text" placeholder="City" id="city"></label> <br>
+                    <label>Postal Code <input type="text" placeholder="Postal Code" id="post"> </label><br>
+
+            </div>
+            <div class="main">
+                <h3>Add a note: </h3>
+                <textarea rows="4" cols="22" placeholder="Notes" id="notes"></textarea><br><br>
+
+                <h3>Reminders type: </h3>
+                <label for="remindEmail">Email</label>
+                <input type="checkbox" value="Email" id="remindEmail"><br>
+                <label for="remindCall">Phone Call</label>
+                <input type="checkbox" value="Phone Call" id="remindCall"> <br>
+                <label for="remindText">Text</label>
+                <input type="checkbox" value="Text" id="remindText"> <br>
+                <br>
+                <br>
+                <br>
+
+
+                <a href="mainmenu.html"><input type="button" value="Cancel" onclick="addToStorage()"></a>
+                <a href="patient-list2.html"><input type="button" onclick="addPatient()" value="Add Patient"></a>
+
+
+            </div>
+        </div>
+    </form>
+</body>
+
+
+
+</html>
